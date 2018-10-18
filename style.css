@@ -1,14 +1,46 @@
 .button {
   position:relative;
   width: auto;
-  color:#ecf0f1;
+  color:#000000;
   text-decoration:none;
   border-radius:5px;
-  border:solid 1px #f39c12;
-  background:#e67e22;
+  border:solid 1px #DDEBFA;
+  background:#DDEBFA;
   text-align:center;
   font-size:12pt;
   margin-top:0em;
 }
 
 h1 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Futura, "Trebuchet MS", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #D0FFA9;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #BAF4FF;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ECBAFF;
+}
